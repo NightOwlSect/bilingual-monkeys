@@ -15,3 +15,5 @@ Fido.bark()
 Spot.bark()
 
 print(Spot)
+
+print((5).bit_length)
