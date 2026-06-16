@@ -1,16 +1,16 @@
 class Dog:
-  pass
+  def __init__(self, name = ""):
+    self.name = ""
+  def bark(self):
+    print (self.name,"says 'woof'!")  
 
-fido = Dog()
-spot = Dog()
+fido = Dog("Fido")
+Spot = Dog("")
 print(type(fido))
 print(type(spot))
 
-fido.name = "Fido"
-print(fido.name)
+fido.bark()
+spot.bark()
 
-new_dog= spot
-new_dog.name = "New dog"
-print(spot.name)
 
 print(spot)
