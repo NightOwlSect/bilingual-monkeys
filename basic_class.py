@@ -1,16 +1,17 @@
 class Dog:
-  def __init__(self, name = ""):
+  def __init__(self,name=""):
     self.name = ""
+  def __str__(self):
+    return self.name
   def bark(self):
     print (self.name,"says 'woof'!")  
 
-fido = Dog("Fido")
-Spot = Dog("")
-print(type(fido))
-print(type(spot))
+Fido = Dog("Fido")
+Spot = Dog("Spot")
+print(type(Fido))
+print(type(Spot))
 
-fido.bark()
-spot.bark()
+Fido.bark()
+Spot.bark()
 
-
-print(spot)
+print(Spot)
